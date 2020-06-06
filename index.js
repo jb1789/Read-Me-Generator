@@ -29,7 +29,7 @@ inquirer.prompt([
   {
      type:'input',
      name: 'License',
-     message: 'Please explain licensing.' 
+     message: 'Please explain licensing.'
   },
   {
      type:'input',
@@ -72,6 +72,9 @@ inquirer.prompt([
       # Usage ${answers.Usage}
       # Usage ${answers.Usage}
       `
+
+      https://img.shields.io/badge/License-MJ-red
+      
       fs.writeFile('readMe.md',readMeString , function (err) {
         if (err) throw err;
         console.log('Saved!');
