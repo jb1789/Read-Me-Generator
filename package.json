@@ -1,0 +1,23 @@
+{
+  "name": "j",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jb1789/Read-Me-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jb1789/Read-Me-Generator/issues"
+  },
+  "homepage": "https://github.com/jb1789/Read-Me-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0",
+    "json": "^9.0.6"
+  }
+}
