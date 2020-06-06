@@ -10,7 +10,7 @@ inquirer.prompt([
  {
      type:'input',
      name: 'Description',
-     message: 'Please give a brief description!' 
+     message: 'Please give a brief description.' 
   },
   {
      type:'input',
@@ -51,12 +51,15 @@ inquirer.prompt([
   .then(function(answers)  {
       console.log( answers); 
       var readMeString = `
-      # Title ${answers.Title}
-      # Description ${answers.Description}
-      # Table of Contents ${answers.tableOfContents}
-      # Installation ${answers.Installation}
-      # Usage ${answers.Usage}
-      # Usage ${answers.Usage}
+      # Title: ${answers.Title}
+      # Description: ${answers.Description}
+      # Table of Contents: ${answers.tableOfContents}
+      # Installation: ${answers.Installation}
+      # Usage: ${answers.Usage}
+      # License: ${answers.License}
+      # Contributing: ${answers.Contributing}
+      # Tests: ${answers.Tests}
+      # Questions: ${answers.Questions}
     [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 
       `
