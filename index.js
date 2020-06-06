@@ -1,5 +1,6 @@
 var inquirer = require('inquirer');
 var fs = require('fs');
+
 inquirer.prompt([
   {
     type:'input',
@@ -29,7 +30,7 @@ inquirer.prompt([
   {
      type:'input',
      name: 'License',
-     message: 'Please explain licensing.'
+     message: 'Please explain licensing.' 
   },
   {
      type:'input',
@@ -40,21 +41,6 @@ inquirer.prompt([
      type:'input',
      name: 'Tests',
      message: 'Please explain testing.' 
-  },
-  {
-     type:'input',
-     name: 'Tests',
-     message: 'Please explain testing.' 
-  },
-  {
-     type:'input',
-     name: 'Tests',
-     message: 'Please explain testing.' 
-  },
-  {
-     type:'input',
-     name: 'Questions',
-     message: 'Any Questions?' 
   },
   {
      type:'input',
@@ -71,12 +57,12 @@ inquirer.prompt([
       # Installation ${answers.Installation}
       # Usage ${answers.Usage}
       # Usage ${answers.Usage}
-      `
+    [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 
-      https://img.shields.io/badge/License-MJ-red
-      
+      `
       fs.writeFile('readMe.md',readMeString , function (err) {
         if (err) throw err;
         console.log('Saved!');
       });
+      
   })
