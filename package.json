@@ -18,6 +18,6 @@
   "homepage": "https://github.com/jb1789/Read-Me-Generator#readme",
   "dependencies": {
     "inquirer": "^7.1.0",
-    "json": "^9.0.6"
+    "json": "^10.0.0"
   }
 }
